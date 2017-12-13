@@ -1,20 +1,21 @@
-/*
- Front-end News! Stylesheet
+/*************************************************
+*
+*   Front-end News! Stylesheet
+*
+*   Indigo        : #3f51b5
+*   Indigo (dark) : #303f9f
+*   Light blue    : #c5cae9
+*   White         : #fff
+*   Pink          : #ff4081
+*   Gray (dark)   : #212121
+*   Gray (medium) : #727272
+*   Gray (light)  : #b6b6b6
+*
+*************************************************/
 
- Indigo        : #3f51b5
- Indigo (dark) : #303f9f
- Light blue    : #c5cae9
- White         : #fff
- Pink          : #ff4081
- Gray (dark)   : #212121
- Gray (medium) : #727272
- Gray (light)  : #b6b6b6
-
-*/
-
-/*
-    Base
-*/
+/*-----------------------------------------------
+*   Base
+-----------------------------------------------*/
 
 body {
   color: #212121;
@@ -40,17 +41,17 @@ p {
 
 a {
   color: #ff4081;
-  transition: 0.2s ease-in-out;
+  transition: 0.2 ease-in-out;
 }
 
 a:active,
 a:hover,
 a:focus {
-   color: #212121;
+  color: #212121;
 }
 
 /*-----------------------------------------------
-    Hero
+*   Hero
 -----------------------------------------------*/
 
 .hero {
@@ -59,12 +60,11 @@ a:focus {
   margin-bottom: 40px;
   padding: 20px 0;
   text-align: center;
-
 }
 
-/*
-    Logo
-*/
+/*-----------------------------------------------
+*   Logo
+-----------------------------------------------*/
 
 .logo {
   font-size: 36px;
@@ -72,9 +72,9 @@ a:focus {
   text-transform: uppercase;
 }
 
-/*
-    News
-*/
+/*-----------------------------------------------
+*   News
+-----------------------------------------------*/
 
 .news-item {
   border-bottom: 1px solid #b6b6b6;
@@ -82,7 +82,7 @@ a:focus {
   padding-bottom: 20px;
 }
 
-.news-item.last-child {
+.news-item:last-child {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -100,34 +100,34 @@ a:focus {
   margin-right: 15px;
 }
 
-/*
-    Content
-*/
+/*-----------------------------------------------
+*   Content
+-----------------------------------------------*/
 
 .content {
   margin-bottom: 40px;
 }
 
-/*
-    Container
-*/
+/*-----------------------------------------------
+*   Container
+-----------------------------------------------*/
 
 .container {
   margin: 0 auto;
   max-width: 800px;
 }
 
-/*
-    States
-*/
+/*-----------------------------------------------
+*   States
+-----------------------------------------------*/
 
 .is-liked {
   animation: flash 2s;
 }
 
-/*
-    Form
-*/
+/*-----------------------------------------------
+*   Form
+-----------------------------------------------*/
 
 .form {
   height: 0;
@@ -139,8 +139,8 @@ a:focus {
 .form.is-visible {
   height: auto;
   opacity: 1;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   visibility: visible;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
 .form-label {
@@ -158,9 +158,9 @@ a:focus {
   width: 100%;
 }
 
-/*
-    Modal
-*/
+/*-----------------------------------------------
+*   Modal
+-----------------------------------------------*/
 
 .modal {
   background-color: #fff;
@@ -171,7 +171,7 @@ a:focus {
   opacity: 0;
   position: absolute;
   top: 40px;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -5%);
   transition: 0.4s ease-in-out;
   visibility: hidden;
   width: 500px;
@@ -180,6 +180,7 @@ a:focus {
 
 .modal.is-visible {
   opacity: 1;
+  transform: translate(-50%, 0);
   visibility: visible;
 }
 
@@ -188,7 +189,7 @@ a:focus {
 }
 
 .modal-media-title {
-  color: white;
+  color: #fff;
   bottom: 20px;
   left: 20px;
   font-size: 30px;
@@ -219,9 +220,9 @@ a:focus {
   visibility: visible;
 }
 
-/*
-    Animation
-*/
+/*-----------------------------------------------
+*   Animation
+-----------------------------------------------*/
 
 @keyframes flash {
   from, 50%, to {
